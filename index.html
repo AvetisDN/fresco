@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Vollkorn|Yesteryear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -399,7 +400,36 @@
         </div>
     </section>
 
+    <section id="our-booking" class="our-spec booking">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Book a Table</h2>
+                    <p class="vollkorn">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 booking__form-element">
+                    <h4>Choose a date</h4>
+                    <input type="text" id="book-date" placeholder="15.02.2020">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 booking__form-element">
+                    <h4>Choose a time</h4>
+                    <input type="text" id="book-time" placeholder="18:00">
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 booking__form-element">
+                    <h4>Number of people</h4>
+                    <input type="number" min="1" max="12" id="book-number" value="1">
+                </div>
+            </div>
+            <div class="row">
+                <a href="#" class="button">Book now</a>
+            </div>
+        </div>
+    </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

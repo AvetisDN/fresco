@@ -303,6 +303,30 @@ h2 {
     font-size: 2.5em;
 }
 
+/*BOOKING*/
+.booking {
+    color: #ffffff;
+    background-image: linear-gradient(to right, rgba(20,23,35,0.8) 0%,rgba(20,23,35,0.6) 100%), url(../images/header3.jpg);
+}
+
+.booking .booking__form-element {
+    text-align-last: left;
+}
+.booking .booking__form-element h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.booking .booking__form-element input {
+    padding: 20px 30px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
 @media screen and (min-width: 992px) {
     #burger {
         display: none;
