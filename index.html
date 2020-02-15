@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Vollkorn|Yesteryear&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
 
         <div class="container">
 
-            <div class="row justify-between header__nav">
+            <div class="row justify-between header__nav" data-aos="fade-down">
                 <div class="col-auto header__logo">
                     <a href="#">
                         Fresco
@@ -26,19 +27,19 @@
                 <div class="col-auto header__menu" id='menu'>
                     <ul>
                         <li class="active">
-                            <a href="#">Home</a>
+                            <a href="#header">Home</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#about">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Menu</a>
+                            <a href="#our-menu">Menu</a>
                         </li>
                         <li>
-                            <a href="#">Reservations</a>
+                            <a href="#booking">Reservations</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#footer">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -49,12 +50,12 @@
 
             <div class="row header__text">
                 <div class="col-12 col-lg-7 header__text-content">
-                    <div class="header__text-icon">
+                    <div class="header__text-icon" data-aos="fade-up" data-aos-delay="100">
                         <img src="images/icon.svg" alt="icon">
                     </div>                    
-                    <h2>Making Food Taste Better</h2>
-                    <h5 class="vollkorn">Italian specialities</h5>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Lorem ipsum dolor sit amet.</p class="vollkorn">
+                    <h2 data-aos="fade-up" data-aos-delay="200">Making Food Taste Better</h2>
+                    <h5 class="vollkorn" data-aos="fade-up" data-aos-delay="300">Italian specialities</h5>
+                    <p class="vollkorn" data-aos="fade-up" data-aos-delay="400">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
 
@@ -66,7 +67,7 @@
 
         <div class="row about__row">
 
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-offset="300">
 
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis maxime vitae sequi enim, ab quam cum excepturi esse laborum!</p>
@@ -76,7 +77,7 @@
             </div>
 
             <div class="col-12 col-lg-5 offset-0 offset-lg-1 about__contact">
-                <div class="about__contact-text">
+                <div class="about__contact-text" data-aos="fade-up" data-aos-delay="300" data-aos-offset="500" data-aos-duration="1000">
                     <h4 class="vollkorn">Contact</h4>
                     <p>Vestibulum ante ipsum primis in faucibus orciluctus et ultrices posuere cubilia.</p>
                     <div class="about__contact-text-block">
@@ -104,7 +105,7 @@
                     </div>
                     <a href="#" class="button button-outline">Table Reservation</a>
                 </div>
-                <div class="about__contact-image"></div>
+                <div class="about__contact-image" data-aos="fade-up" data-aos-delay="500" data-aos-offset="500" data-aos-duration="1000"></div>
             </div>
 
         </div>
@@ -400,7 +401,7 @@
         </div>
     </section>
 
-    <section id="our-booking" class="our-spec booking">
+    <section id="booking" class="our-spec booking">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -428,8 +429,15 @@
         </div>
     </section>
 
+    <footer id="footer"></footer>
+
+    <a href="#header" id="go-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

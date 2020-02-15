@@ -41,6 +41,22 @@ h2 {
     background-color: #9e7c57;
 }
 
+#go-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 70px;
+    height: 70px;
+    background-color: #141723;
+    color: #fff;
+    font-size: 40px;
+    box-shadow: rgba(255,255,255,.4) 0 0 10px;
+    text-decoration: none;
+}
+
 /*HEADER*/
 .header {
     background: #999 center fixed no-repeat;
@@ -316,7 +332,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin: 30px 0 15px 0;
 }
 .booking .booking__form-element input {
     padding: 20px 30px;
@@ -348,10 +364,10 @@ h2 {
         text-align: left;
     }
     .header {
-        height: 750px;
+        height: 100vh;
     }
     .header .header__text {
-        height: 600px;
+        height: calc(100vh - 150px);
     }
     .about .about__contact .about__contact-image {
         display: block;
